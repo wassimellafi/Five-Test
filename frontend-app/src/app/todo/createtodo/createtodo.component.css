@@ -1,0 +1,21 @@
+.changestyle{
+    background:green
+
+}
+.valid{
+    background:green
+
+}
+.changestylered{
+    background:red
+
+}
+
+.is-invalid{
+    background:red
+
+}
+.invalid-feedback{
+    color:red
+
+}

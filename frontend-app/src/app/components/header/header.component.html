@@ -1,0 +1,11 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>test five points</span>
+    <span class="example-fill-remaining-space"></span>
+    <span class="align-center"></span>
+    <span class="example-spacer"></span>
+    <button  *ngIf="(isLoggedIn | async)" routerLink="/todo/indextodo" mat-button>Sondages</button>
+    <button  *ngIf="(isLoggedIn | async)" routerLink="/todo/todo" mat-button>tous les Sondages</button>
+    <button  *ngIf="(isLoggedIn | async)" (click)="logout()" mat-button>Logout</button>
+    
+  </mat-toolbar-row>

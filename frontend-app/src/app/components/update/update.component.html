@@ -1,0 +1,30 @@
+<div align="center">
+  <mat-card class="example-card">
+    <mat-card-header>
+      <mat-card-title>Créer un nouveau sondage</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <form class="example-form">
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+                <input matInput placeholder="titre" [(ngModel)]="model.titre" name="titre" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <textarea  [(ngModel)]="model.Description" id="Description" name="Description" rows="4" cols="50">
+               Description
+                      </textarea>
+            </td>
+          </tr>
+        </table>
+      </form>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-raised-button routerLink="/todo/todo" (click)="onSubmit()" color="primary">Continuer</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

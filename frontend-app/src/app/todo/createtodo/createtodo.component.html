@@ -1,0 +1,19 @@
+
+  <table border="1" align="center">
+      <thead>
+              <th at-implicit at-attribute="index">*</th>
+          <th at-implicit at-attribute="titre">titre</th>
+          <th at-implicit at-attribute="Description">Description</th>
+         
+      </thead>
+      <tbody *ngFor="let item of items; let i = index">
+          <tr>
+              <td>{{ ++i }}</td>
+              <td> {{item.titre}}</td>
+              <td>{{item.Description}}</td>
+       
+          </tr>
+        
+      </tbody>
+    </table>
+    
